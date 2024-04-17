@@ -3,10 +3,8 @@ body {
     margin: 0;
     padding: 0;
     background-image: url(blur.jpg);
-/*     background-color: black; */
     background-repeat:no-repeat;
     background-size: cover;
-/*     color: white; */
 }
 
 header {

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple E-commerce Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 15px;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            height: 100%;
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+        nav a {
+            display: block;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #666;
+        }
+        .menu-toggle {
+            cursor: pointer;
+            padding: 10px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #fff;
+            font-size: 20px;
+        }
+        .content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Simple E-commerce Website</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
+    <nav id="slideMenu">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="content">
+        <h2>Welcome to our store!</h2>
+        <div class="product">
+            <h3>Product 1</h3>
+            <p>Description of Product 1</p>
+            <p>$10.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Product 2</h3>
+            <p>Description of Product 2</p>
+            <p>$15.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="product">
+            <h3>Product 3</h3>
+            <p>Description of Product 3</p>
+            <p>$20.00</p>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var slideMenu = document.getElementById("slideMenu");
+            if (slideMenu.style.left === "-250px") {
+                slideMenu.style.left = "0";
+            } else {
+                slideMenu.style.left = "-250px";
+            }
+        }
+    </script>
+</body>
+</html>

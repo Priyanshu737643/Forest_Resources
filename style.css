@@ -5,6 +5,7 @@ body {
     background-image: url(blur.jpg);
     background-repeat:no-repeat;
     background-size: cover;
+    color: rgb(0, 0, 0);
 }
 
 header {
